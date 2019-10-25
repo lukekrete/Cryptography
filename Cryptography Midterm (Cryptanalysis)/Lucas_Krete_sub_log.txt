@@ -1,0 +1,938 @@
+>>> debug()
+Ciphertext:
+krje-rud-iraeq-uc"nwcgweqq -Xcfyd-mcf-leyveje-vh
+-V-krje-yvhewryym-uch-r-neuum-rud-dcu;h"aucx-kcx-hc-etfvn-Lcwvq '-Qke-hcca-cfh-kew-krudaewpkveo-rud-legru-hc"pwm -'V-ueed-ovje-kfudwed-wflyeq
+-rud-krje
+
+Debug Mode: Enter Command: replace e with e
+Description: most frequent character
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z . , ;   # " ? ' ! : - 
+Sub :- - - - e - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+ciphertext:
+krje-rud-iraeq-uc"nwcgweqq -Xcfyd-mcf-leyveje-vh
+-V-krje-yvhewryym-uch-r-neuum-rud-dcu;h"aucx-kcx-hc-etfvn-Lcwvq '-Qke-hcca-cfh-kew-krudaewpkveo-rud-legru-hc"pwm -'V-ueed-ovje-kfudwed-wflyeq
+-rud-krje
+plaintext :
+---e--------e----------e---------------e--e-e----------e----e-------------e--------------------------e---------------e-----------e-------e----e-------e----------------ee-----e------e------e----------e
+
+_______________________________________
+
+Enter Command: replace - with  
+Description: Seems likely since the groupings are all separated by a -
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z . , ;   # " ? ' ! : - 
+Sub :- - - - e - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+ciphertext:
+krje-rud-iraeq-uc"nwcgweqq -Xcfyd-mcf-leyveje-vh
+-V-krje-yvhewryym-uch-r-neuum-rud-dcu;h"aucx-kcx-hc-etfvn-Lcwvq '-Qke-hcca-cfh-kew-krudaewpkveo-rud-legru-hc"pwm -'V-ueed-ovje-kfudwed-wflyeq
+-rud-krje
+plaintext :
+---e --- ---e- --------e--- ----- --- -e--e-e --- - ---e ---e----- --- - -e--- --- ---------- --- -- e---- ------- --e ---- --- -e- -----e----e- --- -e--- ------- -- -ee- ---e -----e- ----e-- --- ---e
+
+_______________________________________
+
+Enter Command: replace h with t
+Description: Analyzing the trigrams shows that 'THE' is probably 'HKE'
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z . , ;   # " ? ' ! : - 
+Sub :- - - - e - - - - - - - - - - - - - - h - - - - - - - - - - - - - - - - - 
+
+ciphertext:
+krje-rud-iraeq-uc"nwcgweqq -Xcfyd-mcf-leyveje-vh
+-V-krje-yvhewryym-uch-r-neuum-rud-dcu;h"aucx-kcx-hc-etfvn-Lcwvq '-Qke-hcca-cfh-kew-krudaewpkveo-rud-legru-hc"pwm -'V-ueed-ovje-kfudwed-wflyeq
+-rud-krje
+plaintext :
+---e --- ---e- --------e--- ----- --- -e--e-e -t- - ---e --te----- --t - -e--- --- ----t----- --- t- e---- ------- --e t--- --t -e- -----e----e- --- -e--- t------ -- -ee- ---e -----e- ----e-- --- ---e
+
+_______________________________________
+
+Enter Command: replace h with k
+Description: Analyzing trigrams...same as last step
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z . , ;   # " ? ' ! : - 
+Sub :- - - - e - - - - - h - - - - - - - - h - - - - - - - - - - - - - - - - - 
+
+ciphertext:
+krje-rud-iraeq-uc"nwcgweqq -Xcfyd-mcf-leyveje-vh
+-V-krje-yvhewryym-uch-r-neuum-rud-dcu;h"aucx-kcx-hc-etfvn-Lcwvq '-Qke-hcca-cfh-kew-krudaewpkveo-rud-legru-hc"pwm -'V-ueed-ovje-kfudwed-wflyeq
+-rud-krje
+plaintext :
+---e --- ---e- --------e--- ----- --- -e--e-e -k- - ---e --ke----- --k - -e--- --- ----k----- --- k- e---- ------- --e k--- --k -e- -----e----e- --- -e--- k------ -- -ee- ---e -----e- ----e-- --- ---e
+
+_______________________________________
+
+Enter Command: replace r with a
+Description: tha is high frequency as such a must follow after the last trigram
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z . , ;   # " ? ' ! : - 
+Sub :r - - - e - - - - - h - - - - - - - - h - - - - - - - - - - - - - - - - - 
+
+ciphertext:
+krje-rud-iraeq-uc"nwcgweqq -Xcfyd-mcf-leyveje-vh
+-V-krje-yvhewryym-uch-r-neuum-rud-dcu;h"aucx-kcx-hc-etfvn-Lcwvq '-Qke-hcca-cfh-kew-krudaewpkveo-rud-legru-hc"pwm -'V-ueed-ovje-kfudwed-wflyeq
+-rud-krje
+plaintext :
+-a-e a-- -a-e- --------e--- ----- --- -e--e-e -k- - -a-e --ke-a--- --k a -e--- a-- ----k----- --- k- e---- ------- --e k--- --k -e- -a---e----e- a-- -e-a- k------ -- -ee- ---e -----e- ----e-- a-- -a-e
+
+_______________________________________
+
+Enter Command: replace k with h
+Description: Intuition leads me to belive the first word is have
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z . , ;   # " ? ' ! : - 
+Sub :r - - - e - - k - - h - - - - - - - - h - - - - - - - - - - - - - - - - - 
+
+ciphertext:
+krje-rud-iraeq-uc"nwcgweqq -Xcfyd-mcf-leyveje-vh
+-V-krje-yvhewryym-uch-r-neuum-rud-dcu;h"aucx-kcx-hc-etfvn-Lcwvq '-Qke-hcca-cfh-kew-krudaewpkveo-rud-legru-hc"pwm -'V-ueed-ovje-kfudwed-wflyeq
+-rud-krje
+plaintext :
+ha-e a-- -a-e- --------e--- ----- --- -e--e-e -k- - ha-e --ke-a--- --k a -e--- a-- ----k----- h-- k- e---- ------- -he k--- --k he- ha---e--h-e- a-- -e-a- k------ -- -ee- ---e h----e- ----e-- a-- ha-e
+
+_______________________________________
+
+Enter Command: replace j with v
+Description: same as last step
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z . , ;   # " ? ' ! : - 
+Sub :r - - - e - - k - - h - - - - - - - - h - j - - - - - - - - - - - - - - - 
+
+ciphertext:
+krje-rud-iraeq-uc"nwcgweqq -Xcfyd-mcf-leyveje-vh
+-V-krje-yvhewryym-uch-r-neuum-rud-dcu;h"aucx-kcx-hc-etfvn-Lcwvq '-Qke-hcca-cfh-kew-krudaewpkveo-rud-legru-hc"pwm -'V-ueed-ovje-kfudwed-wflyeq
+-rud-krje
+plaintext :
+have a-- -a-e- --------e--- ----- --- -e--eve -k- - have --ke-a--- --k a -e--- a-- ----k----- h-- k- e---- ------- -he k--- --k he- ha---e--h-e- a-- -e-a- k------ -- -ee- --ve h----e- ----e-- a-- have
+
+_______________________________________
+
+Enter Command: replace u with n
+Description: the word and is high frequency, matching that closely of rud and we also already have a figured out
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z . , ;   # " ? ' ! : - 
+Sub :r - - - e - - k - - h - - u - - - - - h - j - - - - - - - - - - - - - - - 
+
+ciphertext:
+krje-rud-iraeq-uc"nwcgweqq -Xcfyd-mcf-leyveje-vh
+-V-krje-yvhewryym-uch-r-neuum-rud-dcu;h"aucx-kcx-hc-etfvn-Lcwvq '-Qke-hcca-cfh-kew-krudaewpkveo-rud-legru-hc"pwm -'V-ueed-ovje-kfudwed-wflyeq
+-rud-krje
+plaintext :
+have an- -a-e- n-------e--- ----- --- -e--eve -k- - have --ke-a--- n-k a -enn- an- --n-k--n-- h-- k- e---- ------- -he k--- --k he- han--e--h-e- an- -e-an k------ -- nee- --ve h-n--e- ----e-- an- have
+
+_______________________________________
+
+Enter Command: replace d with d
+Description: intuition since the 2nd word im pretty sure is and
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z . , ;   # " ? ' ! : - 
+Sub :r - - d e - - k - - h - - u - - - - - h - j - - - - - - - - - - - - - - - 
+
+ciphertext:
+krje-rud-iraeq-uc"nwcgweqq -Xcfyd-mcf-leyveje-vh
+-V-krje-yvhewryym-uch-r-neuum-rud-dcu;h"aucx-kcx-hc-etfvn-Lcwvq '-Qke-hcca-cfh-kew-krudaewpkveo-rud-legru-hc"pwm -'V-ueed-ovje-kfudwed-wflyeq
+-rud-krje
+plaintext :
+have and -a-e- n-------e--- ----d --- -e--eve -k- - have --ke-a--- n-k a -enn- and d-n-k--n-- h-- k- e---- ------- -he k--- --k he- hand-e--h-e- and -e-an k------ -- need --ve h-nd-ed ----e-- and have
+
+_______________________________________
+
+Enter Command: replace a with k
+Description: only possible word hand-e--h-e- could be is handkerchief!
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z . , ;   # " ? ' ! : - 
+Sub :r - - d e - - k - - a - - u - - - - - h - j - - - - - - - - - - - - - - - 
+
+ciphertext:
+krje-rud-iraeq-uc"nwcgweqq -Xcfyd-mcf-leyveje-vh
+-V-krje-yvhewryym-uch-r-neuum-rud-dcu;h"aucx-kcx-hc-etfvn-Lcwvq '-Qke-hcca-cfh-kew-krudaewpkveo-rud-legru-hc"pwm -'V-ueed-ovje-kfudwed-wflyeq
+-rud-krje
+plaintext :
+have and -ake- n-------e--- ----d --- -e--eve -k- - have --ke-a--- n-k a -enn- and d-n-k-kn-- h-- k- e---- ------- -he k--k --k he- handke--h-e- and -e-an k------ -- need --ve h-nd-ed ----e-- and have
+
+_______________________________________
+
+Enter Command: replace w with r
+Description: last step ("Handkerchief")
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z . , ;   # " ? ' ! : - 
+Sub :r - - d e - - k - - a - - u - - - w - h - j - - - - - - - - - - - - - - - 
+
+ciphertext:
+krje-rud-iraeq-uc"nwcgweqq -Xcfyd-mcf-leyveje-vh
+-V-krje-yvhewryym-uch-r-neuum-rud-dcu;h"aucx-kcx-hc-etfvn-Lcwvq '-Qke-hcca-cfh-kew-krudaewpkveo-rud-legru-hc"pwm -'V-ueed-ovje-kfudwed-wflyeq
+-rud-krje
+plaintext :
+have and -ake- n---r--re--- ----d --- -e--eve -k- - have --kera--- n-k a -enn- and d-n-k-kn-- h-- k- e---- --r---- -he k--k --k her handker-h-e- and -e-an k---r-- -- need --ve h-ndred r---e-- and have
+
+_______________________________________
+
+Enter Command: replace p with c
+Description: last step
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z . , ;   # " ? ' ! : - 
+Sub :r - p d e - - k - - a - - u - - - w - h - j - - - - - - - - - - - - - - - 
+
+ciphertext:
+krje-rud-iraeq-uc"nwcgweqq -Xcfyd-mcf-leyveje-vh
+-V-krje-yvhewryym-uch-r-neuum-rud-dcu;h"aucx-kcx-hc-etfvn-Lcwvq '-Qke-hcca-cfh-kew-krudaewpkveo-rud-legru-hc"pwm -'V-ueed-ovje-kfudwed-wflyeq
+-rud-krje
+plaintext :
+have and -ake- n---r--re--- ----d --- -e--eve -k- - have --kera--- n-k a -enn- and d-n-k-kn-- h-- k- e---- --r---- -he k--k --k her handkerch-e- and -e-an k--cr-- -- need --ve h-ndred r---e-- and have
+
+_______________________________________
+
+Enter Command: replace v with i
+Description: last step
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z . , ;   # " ? ' ! : - 
+Sub :r - p d e - - k v - a - - u - - - w - h - j - - - - - - - - - - - - - - - 
+
+ciphertext:
+krje-rud-iraeq-uc"nwcgweqq -Xcfyd-mcf-leyveje-vh
+-V-krje-yvhewryym-uch-r-neuum-rud-dcu;h"aucx-kcx-hc-etfvn-Lcwvq '-Qke-hcca-cfh-kew-krudaewpkveo-rud-legru-hc"pwm -'V-ueed-ovje-kfudwed-wflyeq
+-rud-krje
+plaintext :
+have and -ake- n---r--re--- ----d --- -e-ieve ik- i have -ikera--- n-k a -enn- and d-n-k-kn-- h-- k- e--i- --ri--- -he k--k --k her handkerchie- and -e-an k--cr-- -i need -ive h-ndred r---e-- and have
+
+_______________________________________
+
+Enter Command: replace o with f
+Description: finishing handkerchief
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z . , ;   # " ? ' ! : - 
+Sub :r - p d e o - k v - a - - u - - - w - h - j - - - - - - - - - - - - - - - 
+
+ciphertext:
+krje-rud-iraeq-uc"nwcgweqq -Xcfyd-mcf-leyveje-vh
+-V-krje-yvhewryym-uch-r-neuum-rud-dcu;h"aucx-kcx-hc-etfvn-Lcwvq '-Qke-hcca-cfh-kew-krudaewpkveo-rud-legru-hc"pwm -'V-ueed-ovje-kfudwed-wflyeq
+-rud-krje
+plaintext :
+have and -ake- n---r--re--- ----d --- -e-ieve ik- i have -ikera--- n-k a -enn- and d-n-k-kn-- h-- k- e--i- --ri--- -he k--k --k her handkerchief and -e-an k--cr-- -i need five h-ndred r---e-- and have
+
+_______________________________________
+
+Enter Command: replace i with m
+Description: 3rd word must be make
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z . , ;   # " ? ' ! : - 
+Sub :r - p d e o - k v - a - i u - - - w - h - j - - - - - - - - - - - - - - - 
+
+ciphertext:
+krje-rud-iraeq-uc"nwcgweqq -Xcfyd-mcf-leyveje-vh
+-V-krje-yvhewryym-uch-r-neuum-rud-dcu;h"aucx-kcx-hc-etfvn-Lcwvq '-Qke-hcca-cfh-kew-krudaewpkveo-rud-legru-hc"pwm -'V-ueed-ovje-kfudwed-wflyeq
+-rud-krje
+plaintext :
+have and make- n---r--re--- ----d --- -e-ieve ik- i have -ikera--- n-k a -enn- and d-n-k-kn-- h-- k- e--i- --ri--- -he k--k --k her handkerchief and -e-an k--cr-- -i need five h-ndred r---e-- and have
+
+_______________________________________
+
+Enter Command: replace q with s
+Description: its actually makes lol
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z . , ;   # " ? ' ! : - 
+Sub :r - p d e o - k v - a - i u - - - w q h - j - - - - - - - - - - - - - - - 
+
+ciphertext:
+krje-rud-iraeq-uc"nwcgweqq -Xcfyd-mcf-leyveje-vh
+-V-krje-yvhewryym-uch-r-neuum-rud-dcu;h"aucx-kcx-hc-etfvn-Lcwvq '-Qke-hcca-cfh-kew-krudaewpkveo-rud-legru-hc"pwm -'V-ueed-ovje-kfudwed-wflyeq
+-rud-krje
+plaintext :
+have and makes n---r--ress- ----d --- -e-ieve ik- i have -ikera--- n-k a -enn- and d-n-k-kn-- h-- k- e--i- --ris-- she k--k --k her handkerchief and -e-an k--cr-- -i need five h-ndred r---es- and have
+
+_______________________________________
+
+Enter Command: replace h with t
+Description: -ikera--- is more than likely the word literally, but I made a mistake
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z . , ;   # " ? ' ! : - 
+Sub :r - p d e o - k v - a - i u - - - w q h - j - - - - - - - - - - - - - - - 
+
+ciphertext:
+krje-rud-iraeq-uc"nwcgweqq -Xcfyd-mcf-leyveje-vh
+-V-krje-yvhewryym-uch-r-neuum-rud-dcu;h"aucx-kcx-hc-etfvn-Lcwvq '-Qke-hcca-cfh-kew-krudaewpkveo-rud-legru-hc"pwm -'V-ueed-ovje-kfudwed-wflyeq
+-rud-krje
+plaintext :
+have and makes n---r--ress- ----d --- -e-ieve it- i have -itera--- n-t a -enn- and d-n-t-kn-- h-- t- e--i- --ris-- she t--k --t her handkerchief and -e-an t--cr-- -i need five h-ndred r---es- and have
+
+_______________________________________
+
+Enter Command: replace y with l
+Description: finishing word literally
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z . , ;   # " ? ' ! : - 
+Sub :r - p d e o - k v - a y i u - - - w q h - j - - - - - - - - - - - - - - - 
+
+ciphertext:
+krje-rud-iraeq-uc"nwcgweqq -Xcfyd-mcf-leyveje-vh
+-V-krje-yvhewryym-uch-r-neuum-rud-dcu;h"aucx-kcx-hc-etfvn-Lcwvq '-Qke-hcca-cfh-kew-krudaewpkveo-rud-legru-hc"pwm -'V-ueed-ovje-kfudwed-wflyeq
+-rud-krje
+plaintext :
+have and makes n---r--ress- ---ld --- -elieve it- i have literall- n-t a -enn- and d-n-t-kn-- h-- t- e--i- --ris-- she t--k --t her handkerchief and -e-an t--cr-- -i need five h-ndred r--les- and have
+
+_______________________________________
+
+Enter Command: replace m with y
+Description: finishing word literally
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z . , ;   # " ? ' ! : - 
+Sub :r - p d e o - k v - a y i u - - - w q h - j - - m - - - - - - - - - - - - 
+
+ciphertext:
+krje-rud-iraeq-uc"nwcgweqq -Xcfyd-mcf-leyveje-vh
+-V-krje-yvhewryym-uch-r-neuum-rud-dcu;h"aucx-kcx-hc-etfvn-Lcwvq '-Qke-hcca-cfh-kew-krudaewpkveo-rud-legru-hc"pwm -'V-ueed-ovje-kfudwed-wflyeq
+-rud-krje
+plaintext :
+have and makes n---r--ress- ---ld y-- -elieve it- i have literally n-t a -enny and d-n-t-kn-- h-- t- e--i- --ris-- she t--k --t her handkerchief and -e-an t--cry- -i need five h-ndred r--les- and have
+
+_______________________________________
+
+Enter Command: replace l with b
+Description: finishing word believe
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z . , ;   # " ? ' ! : - 
+Sub :r l p d e o - k v - a y i u - - - w q h - j - - m - - - - - - - - - - - - 
+
+ciphertext:
+krje-rud-iraeq-uc"nwcgweqq -Xcfyd-mcf-leyveje-vh
+-V-krje-yvhewryym-uch-r-neuum-rud-dcu;h"aucx-kcx-hc-etfvn-Lcwvq '-Qke-hcca-cfh-kew-krudaewpkveo-rud-legru-hc"pwm -'V-ueed-ovje-kfudwed-wflyeq
+-rud-krje
+plaintext :
+have and makes n---r--ress- ---ld y-- believe it- i have literally n-t a -enny and d-n-t-kn-- h-- t- e--i- b-ris-- she t--k --t her handkerchief and be-an t--cry- -i need five h-ndred r-bles- and have
+
+_______________________________________
+
+Enter Command: replace c with o
+Description: the word took is obvious
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z . , ;   # " ? ' ! : - 
+Sub :r l p d e o - k v - a y i u c - - w q h - j - - m - - - - - - - - - - - - 
+
+ciphertext:
+krje-rud-iraeq-uc"nwcgweqq -Xcfyd-mcf-leyveje-vh
+-V-krje-yvhewryym-uch-r-neuum-rud-dcu;h"aucx-kcx-hc-etfvn-Lcwvq '-Qke-hcca-cfh-kew-krudaewpkveo-rud-legru-hc"pwm -'V-ueed-ovje-kfudwed-wflyeq
+-rud-krje
+plaintext :
+have and makes no--ro-ress- -o-ld yo- believe it- i have literally not a -enny and don-t-kno- ho- to e--i- boris-- she took o-t her handkerchief and be-an to-cry- -i need five h-ndred r-bles- and have
+
+_______________________________________
+
+Enter Command: replace f with u
+Description: word you is obvious
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z . , ;   # " ? ' ! : - 
+Sub :r l p d e o - k v - a y i u c - - w q h f j - - m - - - - - - - - - - - - 
+
+ciphertext:
+krje-rud-iraeq-uc"nwcgweqq -Xcfyd-mcf-leyveje-vh
+-V-krje-yvhewryym-uch-r-neuum-rud-dcu;h"aucx-kcx-hc-etfvn-Lcwvq '-Qke-hcca-cfh-kew-krudaewpkveo-rud-legru-hc"pwm -'V-ueed-ovje-kfudwed-wflyeq
+-rud-krje
+plaintext :
+have and makes no--ro-ress- -ould you believe it- i have literally not a -enny and don-t-kno- ho- to e-ui- boris-- she took out her handkerchief and be-an to-cry- -i need five hundred rubles- and have
+
+_______________________________________
+
+Enter Command: replace x with w
+Description: would is obvious
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z . , ;   # " ? ' ! : - 
+Sub :r l p d e o - k v - a y i u c - - w q h f j x - m - - - - - - - - - - - - 
+
+ciphertext:
+krje-rud-iraeq-uc"nwcgweqq -Xcfyd-mcf-leyveje-vh
+-V-krje-yvhewryym-uch-r-neuum-rud-dcu;h"aucx-kcx-hc-etfvn-Lcwvq '-Qke-hcca-cfh-kew-krudaewpkveo-rud-legru-hc"pwm -'V-ueed-ovje-kfudwed-wflyeq
+-rud-krje
+plaintext :
+have and makes no--ro-ress- would you believe it- i have literally not a -enny and don-t-know how to e-ui- boris-- she took out her handkerchief and be-an to-cry- -i need five hundred rubles- and have
+
+_______________________________________
+
+Enter Command: replace n with p
+Description: finishing word penny
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z . , ;   # " ? ' ! : - 
+Sub :r l p d e o - k v - a y i u c n - w q h f j x - m - - - - - - - - - - - - 
+
+ciphertext:
+krje-rud-iraeq-uc"nwcgweqq -Xcfyd-mcf-leyveje-vh
+-V-krje-yvhewryym-uch-r-neuum-rud-dcu;h"aucx-kcx-hc-etfvn-Lcwvq '-Qke-hcca-cfh-kew-krudaewpkveo-rud-legru-hc"pwm -'V-ueed-ovje-kfudwed-wflyeq
+-rud-krje
+plaintext :
+have and makes no-pro-ress- would you believe it- i have literally not a penny and don-t-know how to e-uip boris-- she took out her handkerchief and be-an to-cry- -i need five hundred rubles- and have
+
+_______________________________________
+
+Enter Command: replace g with g
+Description: finishing word began
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z . , ;   # " ? ' ! : - 
+Sub :r l p d e o g k v - a y i u c n - w q h f j x - m - - - - - - - - - - - - 
+
+ciphertext:
+krje-rud-iraeq-uc"nwcgweqq -Xcfyd-mcf-leyveje-vh
+-V-krje-yvhewryym-uch-r-neuum-rud-dcu;h"aucx-kcx-hc-etfvn-Lcwvq '-Qke-hcca-cfh-kew-krudaewpkveo-rud-legru-hc"pwm -'V-ueed-ovje-kfudwed-wflyeq
+-rud-krje
+plaintext :
+have and makes no-progress- would you believe it- i have literally not a penny and don-t-know how to e-uip boris-- she took out her handkerchief and began to-cry- -i need five hundred rubles- and have
+
+_______________________________________
+
+Enter Command: replace t with q
+Description: word equip is obvious
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z . , ;   # " ? ' ! : - 
+Sub :r l p d e o g k v - a y i u c n t w q h f j x - m - - - - - - - - - - - - 
+
+ciphertext:
+krje-rud-iraeq-uc"nwcgweqq -Xcfyd-mcf-leyveje-vh
+-V-krje-yvhewryym-uch-r-neuum-rud-dcu;h"aucx-kcx-hc-etfvn-Lcwvq '-Qke-hcca-cfh-kew-krudaewpkveo-rud-legru-hc"pwm -'V-ueed-ovje-kfudwed-wflyeq
+-rud-krje
+plaintext :
+have and makes no-progress- would you believe it- i have literally not a penny and don-t-know how to equip boris-- she took out her handkerchief and began to-cry- -i need five hundred rubles- and have
+
+_______________________________________
+
+Enter Command: replace ; with '
+Description: the word don't has an apostrophe
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z . , ;   # " ? ' ! : - 
+Sub :r l p d e o g k v - a y i u c n t w q h f j x - m - - - - - - - - ; - - - 
+
+ciphertext:
+krje-rud-iraeq-uc"nwcgweqq -Xcfyd-mcf-leyveje-vh
+-V-krje-yvhewryym-uch-r-neuum-rud-dcu;h"aucx-kcx-hc-etfvn-Lcwvq '-Qke-hcca-cfh-kew-krudaewpkveo-rud-legru-hc"pwm -'V-ueed-ovje-kfudwed-wflyeq
+-rud-krje
+plaintext :
+have and makes no-progress- would you believe it- i have literally not a penny and don't-know how to equip boris-- she took out her handkerchief and began to-cry- -i need five hundred rubles- and have
+
+_______________________________________
+
+Enter Command: replace ' with "
+Description: adding quotes around the girl's statement - inutitive
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z . , ;   # " ? ' ! : - 
+Sub :r l p d e o g k v - a y i u c n t w q h f j x - m - - - - - - ' - ; - - - 
+
+ciphertext:
+krje-rud-iraeq-uc"nwcgweqq -Xcfyd-mcf-leyveje-vh
+-V-krje-yvhewryym-uch-r-neuum-rud-dcu;h"aucx-kcx-hc-etfvn-Lcwvq '-Qke-hcca-cfh-kew-krudaewpkveo-rud-legru-hc"pwm -'V-ueed-ovje-kfudwed-wflyeq
+-rud-krje
+plaintext :
+have and makes no-progress- would you believe it- i have literally not a penny and don't-know how to equip boris-" she took out her handkerchief and began to-cry- "i need five hundred rubles- and have
+
+_______________________________________
+
+Enter Command: replace " with #
+Description: newline is the only thing this could possibly be
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z . , ;   # " ? ' ! : - 
+Sub :r l p d e o g k v - a y i u c n t w q h f j x - m - - - - - " ' - ; - - - 
+
+ciphertext:
+krje-rud-iraeq-uc"nwcgweqq -Xcfyd-mcf-leyveje-vh
+-V-krje-yvhewryym-uch-r-neuum-rud-dcu;h"aucx-kcx-hc-etfvn-Lcwvq '-Qke-hcca-cfh-kew-krudaewpkveo-rud-legru-hc"pwm -'V-ueed-ovje-kfudwed-wflyeq
+-rud-krje
+plaintext :
+have and makes no
+progress- would you believe it- i have literally not a penny and don't
+know how to equip boris-" she took out her handkerchief and began to
+cry- "i need five hundred rubles- and have
+
+_______________________________________
+
+Enter Command: replace - with .
+Description: intuition, progress looks like it would need a period after it with the sentence structure
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z . , ;   # " ? ' ! : - 
+Sub :r l p d e o g k v - a y i u c n t w q h f j x - m - - - - - " ' - ; - - - 
+
+ciphertext:
+krje-rud-iraeq-uc"nwcgweqq -Xcfyd-mcf-leyveje-vh
+-V-krje-yvhewryym-uch-r-neuum-rud-dcu;h"aucx-kcx-hc-etfvn-Lcwvq '-Qke-hcca-cfh-kew-krudaewpkveo-rud-legru-hc"pwm -'V-ueed-ovje-kfudwed-wflyeq
+-rud-krje
+plaintext :
+have.and.makes.no
+progress-.would.you.believe.it-.i.have.literally.not.a.penny.and.don't
+know.how.to.equip.boris-".she.took.out.her.handkerchief.and.began.to
+cry-."i.need.five.hundred.rubles-.and.have
+
+_______________________________________
+
+Enter Command: replace - with  
+Description: fixing mistake
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z . , ;   # " ? ' ! : - 
+Sub :r l p d e o g k v - a y i u c n t w q h f j x - m - - - - - " ' - ; - - - 
+
+ciphertext:
+krje-rud-iraeq-uc"nwcgweqq -Xcfyd-mcf-leyveje-vh
+-V-krje-yvhewryym-uch-r-neuum-rud-dcu;h"aucx-kcx-hc-etfvn-Lcwvq '-Qke-hcca-cfh-kew-krudaewpkveo-rud-legru-hc"pwm -'V-ueed-ovje-kfudwed-wflyeq
+-rud-krje
+plaintext :
+have and makes no
+progress- would you believe it- i have literally not a penny and don't
+know how to equip boris-" she took out her handkerchief and began to
+cry- "i need five hundred rubles- and have
+
+_______________________________________
+
+Enter Command: replace   with .
+Description: its actually a space, not a dash i made a mistake lol
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z . , ;   # " ? ' ! : - 
+Sub :r l p d e o g k v - a y i u c n t w q h f j x - m -   - - - " ' - ; - - - 
+
+ciphertext:
+krje-rud-iraeq-uc"nwcgweqq -Xcfyd-mcf-leyveje-vh
+-V-krje-yvhewryym-uch-r-neuum-rud-dcu;h"aucx-kcx-hc-etfvn-Lcwvq '-Qke-hcca-cfh-kew-krudaewpkveo-rud-legru-hc"pwm -'V-ueed-ovje-kfudwed-wflyeq
+-rud-krje
+plaintext :
+have and makes no
+progress. would you believe it- i have literally not a penny and don't
+know how to equip boris." she took out her handkerchief and began to
+cry. "i need five hundred rubles- and have
+
+_______________________________________
+
+Enter Command: replace - with ,
+Description: trying something to see if it makes sense
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z . , ;   # " ? ' ! : - 
+Sub :r l p d e o g k v - a y i u c n t w q h f j x - m -   - - - " ' - ; - - - 
+
+ciphertext:
+krje-rud-iraeq-uc"nwcgweqq -Xcfyd-mcf-leyveje-vh
+-V-krje-yvhewryym-uch-r-neuum-rud-dcu;h"aucx-kcx-hc-etfvn-Lcwvq '-Qke-hcca-cfh-kew-krudaewpkveo-rud-legru-hc"pwm -'V-ueed-ovje-kfudwed-wflyeq
+-rud-krje
+plaintext :
+have,and,makes,no
+progress.,would,you,believe,it-,i,have,literally,not,a,penny,and,don't
+know,how,to,equip,boris.",she,took,out,her,handkerchief,and,began,to
+cry.,"i,need,five,hundred,rubles-,and,have
+
+_______________________________________
+
+Enter Command: replace - with  
+Description: jk it didnt work
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z . , ;   # " ? ' ! : - 
+Sub :r l p d e o g k v - a y i u c n t w q h f j x - m -   - - - " ' - ; - - - 
+
+ciphertext:
+krje-rud-iraeq-uc"nwcgweqq -Xcfyd-mcf-leyveje-vh
+-V-krje-yvhewryym-uch-r-neuum-rud-dcu;h"aucx-kcx-hc-etfvn-Lcwvq '-Qke-hcca-cfh-kew-krudaewpkveo-rud-legru-hc"pwm -'V-ueed-ovje-kfudwed-wflyeq
+-rud-krje
+plaintext :
+have and makes no
+progress. would you believe it- i have literally not a penny and don't
+know how to equip boris." she took out her handkerchief and began to
+cry. "i need five hundred rubles- and have
+
+_______________________________________
+
+Enter Command: replace j with b
+Description: trial and error because im stuck
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z . , ;   # " ? ' ! : - 
+Sub :r j p d e o g k v - a y i u c n t w q h f j x - m -   - - - " ' - ; - - - 
+
+ciphertext:
+krje-rud-iraeq-uc"nwcgweqq -Xcfyd-mcf-leyveje-vh
+-V-krje-yvhewryym-uch-r-neuum-rud-dcu;h"aucx-kcx-hc-etfvn-Lcwvq '-Qke-hcca-cfh-kew-krudaewpkveo-rud-legru-hc"pwm -'V-ueed-ovje-kfudwed-wflyeq
+-rud-krje
+plaintext :
+habe and makes no
+progress. would you beliebe it- i habe literally not a penny and don't
+know how to equip boris." she took out her handkerchief and began to
+cry. "i need fibe hundred rubles- and habe
+
+_______________________________________
+
+Enter Command: replace j with l
+Description: fixing
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z . , ;   # " ? ' ! : - 
+Sub :r j p d e o g k v - a j i u c n t w q h f j x - m -   - - - " ' - ; - - - 
+
+ciphertext:
+krje-rud-iraeq-uc"nwcgweqq -Xcfyd-mcf-leyveje-vh
+-V-krje-yvhewryym-uch-r-neuum-rud-dcu;h"aucx-kcx-hc-etfvn-Lcwvq '-Qke-hcca-cfh-kew-krudaewpkveo-rud-legru-hc"pwm -'V-ueed-ovje-kfudwed-wflyeq
+-rud-krje
+plaintext :
+hale and makes no
+progress. would you beliele it- i hale literally not a penny and don't
+know how to equip boris." she took out her handkerchief and began to
+cry. "i need file hundred rubles- and hale
+
+_______________________________________
+
+Enter Command: replace j with v
+Description: fixing
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z . , ;   # " ? ' ! : - 
+Sub :r j p d e o g k v - a j i u c n t w q h f j x - m -   - - - " ' - ; - - - 
+
+ciphertext:
+krje-rud-iraeq-uc"nwcgweqq -Xcfyd-mcf-leyveje-vh
+-V-krje-yvhewryym-uch-r-neuum-rud-dcu;h"aucx-kcx-hc-etfvn-Lcwvq '-Qke-hcca-cfh-kew-krudaewpkveo-rud-legru-hc"pwm -'V-ueed-ovje-kfudwed-wflyeq
+-rud-krje
+plaintext :
+have and makes no
+progress. would you believe it- i have literally not a penny and don't
+know how to equip boris." she took out her handkerchief and began to
+cry. "i need five hundred rubles- and have
+
+_______________________________________
+
+Enter Command: replace b with l
+Description: fixing
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z . , ;   # " ? ' ! : - 
+Sub :r j p d e o g k v - a b i u c n t w q h f j x - m -   - - - " ' - ; - - - 
+
+ciphertext:
+krje-rud-iraeq-uc"nwcgweqq -Xcfyd-mcf-leyveje-vh
+-V-krje-yvhewryym-uch-r-neuum-rud-dcu;h"aucx-kcx-hc-etfvn-Lcwvq '-Qke-hcca-cfh-kew-krudaewpkveo-rud-legru-hc"pwm -'V-ueed-ovje-kfudwed-wflyeq
+-rud-krje
+plaintext :
+have and makes no
+progress. would you believe it- i have literally not a penny and don't
+know how to equip boris." she took out her handkerchief and began to
+cry. "i need five hundred rubles- and have
+
+_______________________________________
+
+Enter Command: replace j with l
+Description: fixing
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z . , ;   # " ? ' ! : - 
+Sub :r j p d e o g k v - a j i u c n t w q h f j x - m -   - - - " ' - ; - - - 
+
+ciphertext:
+krje-rud-iraeq-uc"nwcgweqq -Xcfyd-mcf-leyveje-vh
+-V-krje-yvhewryym-uch-r-neuum-rud-dcu;h"aucx-kcx-hc-etfvn-Lcwvq '-Qke-hcca-cfh-kew-krudaewpkveo-rud-legru-hc"pwm -'V-ueed-ovje-kfudwed-wflyeq
+-rud-krje
+plaintext :
+hale and makes no
+progress. would you beliele it- i hale literally not a penny and don't
+know how to equip boris." she took out her handkerchief and began to
+cry. "i need file hundred rubles- and hale
+
+_______________________________________
+
+Enter Command: replace j with v
+Description: 
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z . , ;   # " ? ' ! : - 
+Sub :r j p d e o g k v - a j i u c n t w q h f j x - m -   - - - " ' - ; - - - 
+
+ciphertext:
+krje-rud-iraeq-uc"nwcgweqq -Xcfyd-mcf-leyveje-vh
+-V-krje-yvhewryym-uch-r-neuum-rud-dcu;h"aucx-kcx-hc-etfvn-Lcwvq '-Qke-hcca-cfh-kew-krudaewpkveo-rud-legru-hc"pwm -'V-ueed-ovje-kfudwed-wflyeq
+-rud-krje
+plaintext :
+have and makes no
+progress. would you believe it- i have literally not a penny and don't
+know how to equip boris." she took out her handkerchief and began to
+cry. "i need five hundred rubles- and have
+
+_______________________________________
+
+Enter Command: replace b with j
+Description: test
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z . , ;   # " ? ' ! : - 
+Sub :r j p d e o g k v b a j i u c n t w q h f j x - m -   - - - " ' - ; - - - 
+
+ciphertext:
+krje-rud-iraeq-uc"nwcgweqq -Xcfyd-mcf-leyveje-vh
+-V-krje-yvhewryym-uch-r-neuum-rud-dcu;h"aucx-kcx-hc-etfvn-Lcwvq '-Qke-hcca-cfh-kew-krudaewpkveo-rud-legru-hc"pwm -'V-ueed-ovje-kfudwed-wflyeq
+-rud-krje
+plaintext :
+have and makes no
+progress. would you believe it- i have literally not a penny and don't
+know how to equip boris." she took out her handkerchief and began to
+cry. "i need five hundred rubles- and have
+
+_______________________________________
+
+Enter Command: replace l with b
+Description: test
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z . , ;   # " ? ' ! : - 
+Sub :r l p d e o g k v b a j i u c n t w q h f j x - m -   - - - " ' - ; - - - 
+
+ciphertext:
+krje-rud-iraeq-uc"nwcgweqq -Xcfyd-mcf-leyveje-vh
+-V-krje-yvhewryym-uch-r-neuum-rud-dcu;h"aucx-kcx-hc-etfvn-Lcwvq '-Qke-hcca-cfh-kew-krudaewpkveo-rud-legru-hc"pwm -'V-ueed-ovje-kfudwed-wflyeq
+-rud-krje
+plaintext :
+have and makes no
+progress. would you believe it- i have literally not a penny and don't
+know how to equip boris." she took out her handkerchief and began to
+cry. "i need five hundred rubles- and have
+
+_______________________________________
+
+Enter Command: replace z with z
+Description: intuition
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z . , ;   # " ? ' ! : - 
+Sub :r l p d e o g k v b a j i u c n t w q h f j x - m z   - - - " ' - ; - - - 
+
+ciphertext:
+krje-rud-iraeq-uc"nwcgweqq -Xcfyd-mcf-leyveje-vh
+-V-krje-yvhewryym-uch-r-neuum-rud-dcu;h"aucx-kcx-hc-etfvn-Lcwvq '-Qke-hcca-cfh-kew-krudaewpkveo-rud-legru-hc"pwm -'V-ueed-ovje-kfudwed-wflyeq
+-rud-krje
+plaintext :
+have and makes no
+progress. would you believe it- i have literally not a penny and don't
+know how to equip boris." she took out her handkerchief and began to
+cry. "i need five hundred rubles- and have
+
+_______________________________________
+
+Enter Command: replace y with l
+Description: fix
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z . , ;   # " ? ' ! : - 
+Sub :r l p d e o g k v b a y i u c n t w q h f j x - m z   - - - " ' - ; - - - 
+
+ciphertext:
+krje-rud-iraeq-uc"nwcgweqq -Xcfyd-mcf-leyveje-vh
+-V-krje-yvhewryym-uch-r-neuum-rud-dcu;h"aucx-kcx-hc-etfvn-Lcwvq '-Qke-hcca-cfh-kew-krudaewpkveo-rud-legru-hc"pwm -'V-ueed-ovje-kfudwed-wflyeq
+-rud-krje
+plaintext :
+have and makes no
+progress. would you believe it- i have literally not a penny and don't
+know how to equip boris." she took out her handkerchief and began to
+cry. "i need five hundred rubles- and have
+
+_______________________________________
+
+Enter Command: replace s with x
+Description: finishing alphabet
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z . , ;   # " ? ' ! : - 
+Sub :r l p d e o g k v b a y i u c n t w q h f j x s m z   - - - " ' - ; - - - 
+
+ciphertext:
+krje-rud-iraeq-uc"nwcgweqq -Xcfyd-mcf-leyveje-vh
+-V-krje-yvhewryym-uch-r-neuum-rud-dcu;h"aucx-kcx-hc-etfvn-Lcwvq '-Qke-hcca-cfh-kew-krudaewpkveo-rud-legru-hc"pwm -'V-ueed-ovje-kfudwed-wflyeq
+-rud-krje
+plaintext :
+have and makes no
+progress. would you believe it- i have literally not a penny and don't
+know how to equip boris." she took out her handkerchief and began to
+cry. "i need five hundred rubles- and have
+
+_______________________________________
+
+Enter Command: replace ? with ?
+Description: only 1 question mark and it looks to be in the correct place
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z . , ;   # " ? ' ! : - 
+Sub :r l p d e o g k v b a y i u c n t w q h f j x s m z   - - - " ' ? ; - - - 
+
+ciphertext:
+krje-rud-iraeq-uc"nwcgweqq -Xcfyd-mcf-leyveje-vh
+-V-krje-yvhewryym-uch-r-neuum-rud-dcu;h"aucx-kcx-hc-etfvn-Lcwvq '-Qke-hcca-cfh-kew-krudaewpkveo-rud-legru-hc"pwm -'V-ueed-ovje-kfudwed-wflyeq
+-rud-krje
+plaintext :
+have and makes no
+progress. would you believe it- i have literally not a penny and don't
+know how to equip boris." she took out her handkerchief and began to
+cry. "i need five hundred rubles- and have
+
+_______________________________________
+
+Enter Command: replace , with  
+Description: test
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z . , ;   # " ? ' ! : - 
+Sub :r l p d e o g k v b a y i u c n t w q h f j x s m z   - - , " ' ? ; - - - 
+
+ciphertext:
+krje-rud-iraeq-uc"nwcgweqq -Xcfyd-mcf-leyveje-vh
+-V-krje-yvhewryym-uch-r-neuum-rud-dcu;h"aucx-kcx-hc-etfvn-Lcwvq '-Qke-hcca-cfh-kew-krudaewpkveo-rud-legru-hc"pwm -'V-ueed-ovje-kfudwed-wflyeq
+-rud-krje
+plaintext :
+have and makes no
+progress. would you believe it- i have literally not a penny and don't
+know how to equip boris." she took out her handkerchief and began to
+cry. "i need five hundred rubles- and have
+
+_______________________________________
+
+Enter Command: replace : with ,
+Description: process of elimination
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z . , ;   # " ? ' ! : - 
+Sub :r l p d e o g k v b a y i u c n t w q h f j x s m z   : - - " ' ? ; - - - 
+
+ciphertext:
+krje-rud-iraeq-uc"nwcgweqq -Xcfyd-mcf-leyveje-vh
+-V-krje-yvhewryym-uch-r-neuum-rud-dcu;h"aucx-kcx-hc-etfvn-Lcwvq '-Qke-hcca-cfh-kew-krudaewpkveo-rud-legru-hc"pwm -'V-ueed-ovje-kfudwed-wflyeq
+-rud-krje-cuym-cue-hxeuhm.ovje.wflye"uche -V-ri-vu-qfpk-r-qhrhe    -Im-cuym-kcne-ucx-vq-vu-Pcfuh-Pmwvy"Jyrdvivwcjvpk-Lebúakcj -Vo-ke-xvyy-uch-rqqvqh-kvq-gcdqcu.mcf-aucx"ke-vq-Lcwm;q-gcdorhkew.rud-ryycx-kvi-qciehkvug-ocw-kvq-irvuheurupe
+"ryy-im-hwcflye-xvyy-krje-leeu-hkwcxu-rxrm    -V-qkryy-uch-le-rlye-hc"et
+plaintext :
+have and makes no
+progress. would you believe it- i have literally not a penny and don't
+know how to equip boris." she took out her handkerchief and began to
+cry. "i need five hundred rubles- and have only one twenty-five-ruble
+note. i am in such a state.... my only hope now is in count cyril
+vladimirovich bej--khov. if he will not assist his godson-you know
+he is bory's godfather-and allow him something for his maintenance-
+all my trouble will have been thrown away.... i shall not be able to
+eq
+
+_______________________________________
+
+Enter Command: replace # with -
+Description: process of elimination
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z . , ;   # " ? ' ! : - 
+Sub :r l p d e o g k v b a y i u c n t w q h f j x s m z   : - - " ' ? ; - - # 
+
+ciphertext:
+krje-rud-iraeq-uc"nwcgweqq -Xcfyd-mcf-leyveje-vh
+-V-krje-yvhewryym-uch-r-neuum-rud-dcu;h"aucx-kcx-hc-etfvn-Lcwvq '-Qke-hcca-cfh-kew-krudaewpkveo-rud-legru-hc"pwm -'V-ueed-ovje-kfudwed-wflyeq
+-rud-krje-cuym-cue-hxeuhm.ovje.wflye"uche -V-ri-vu-qfpk-r-qhrhe    -Im-cuym-kcne-ucx-vq-vu-Pcfuh-Pmwvy"Jyrdvivwcjvpk-Lebúakcj -Vo-ke-xvyy-uch-rqqvqh-kvq-gcdqcu.mcf-aucx"ke-vq-Lcwm;q-gcdorhkew.rud-ryycx-kvi-qciehkvug-ocw-kvq-irvuheurupe
+"ryy-im-hwcflye-xvyy-krje-leeu-hkwcxu-rxrm    -V-qkryy-uch-le-rlye-hc"et
+plaintext :
+have and makes no
+progress. would you believe it- i have literally not a penny and don't
+know how to equip boris." she took out her handkerchief and began to
+cry. "i need five hundred rubles- and have only one twenty-five-ruble
+note. i am in such a state.... my only hope now is in count cyril
+vladimirovich bej--khov. if he will not assist his godson-you know
+he is bory's godfather-and allow him something for his maintenance-
+all my trouble will have been thrown away.... i shall not be able to
+eq
+
+_______________________________________
+
+Enter Command: replace ! with !
+Description: 
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z . , ;   # " ? ' ! : - 
+Sub :r l p d e o g k v b a y i u c n t w q h f j x s m z   : - - " ' ? ; ! - # 
+
+ciphertext:
+krje-rud-iraeq-uc"nwcgweqq -Xcfyd-mcf-leyveje-vh
+-V-krje-yvhewryym-uch-r-neuum-rud-dcu;h"aucx-kcx-hc-etfvn-Lcwvq '-Qke-hcca-cfh-kew-krudaewpkveo-rud-legru-hc"pwm -'V-ueed-ovje-kfudwed-wflyeq
+-rud-krje-cuym-cue-hxeuhm.ovje.wflye"uche -V-ri-vu-qfpk-r-qhrhe    -Im-cuym-kcne-ucx-vq-vu-Pcfuh-Pmwvy"Jyrdvivwcjvpk-Lebúakcj -Vo-ke-xvyy-uch-rqqvqh-kvq-gcdqcu.mcf-aucx"ke-vq-Lcwm;q-gcdorhkew.rud-ryycx-kvi-qciehkvug-ocw-kvq-irvuheurupe
+"ryy-im-hwcflye-xvyy-krje-leeu-hkwcxu-rxrm    -V-qkryy-uch-le-rlye-hc"et
+plaintext :
+have and makes no
+progress. would you believe it- i have literally not a penny and don't
+know how to equip boris." she took out her handkerchief and began to
+cry. "i need five hundred rubles- and have only one twenty-five-ruble
+note. i am in such a state.... my only hope now is in count cyril
+vladimirovich bej--khov. if he will not assist his godson-you know
+he is bory's godfather-and allow him something for his maintenance-
+all my trouble will have been thrown away.... i shall not be able to
+eq
+
+_______________________________________
+
+Enter Command: replace . with ;
+Description: 
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z . , ;   # " ? ' ! : - 
+Sub :r l p d e o g k v b a y i u c n t w q h f j x s m z   : . - " ' ? ; ! - # 
+
+ciphertext:
+krje-rud-iraeq-uc"nwcgweqq -Xcfyd-mcf-leyveje-vh
+-V-krje-yvhewryym-uch-r-neuum-rud-dcu;h"aucx-kcx-hc-etfvn-Lcwvq '-Qke-hcca-cfh-kew-krudaewpkveo-rud-legru-hc"pwm -'V-ueed-ovje-kfudwed-wflyeq
+-rud-krje-cuym-cue-hxeuhm.ovje.wflye"uche -V-ri-vu-qfpk-r-qhrhe    -Im-cuym-kcne-ucx-vq-vu-Pcfuh-Pmwvy"Jyrdvivwcjvpk-Lebúakcj -Vo-ke-xvyy-uch-rqqvqh-kvq-gcdqcu.mcf-aucx"ke-vq-Lcwm;q-gcdorhkew.rud-ryycx-kvi-qciehkvug-ocw-kvq-irvuheurupe
+"ryy-im-hwcflye-xvyy-krje-leeu-hkwcxu-rxrm    -V-qkryy-uch-le-rlye-hc"et
+plaintext :
+have and makes no
+progress. would you believe it- i have literally not a penny and don't
+know how to equip boris." she took out her handkerchief and began to
+cry. "i need five hundred rubles- and have only one twenty;five;ruble
+note. i am in such a state.... my only hope now is in count cyril
+vladimirovich bej--khov. if he will not assist his godson;you know
+he is bory's godfather;and allow him something for his maintenance-
+all my trouble will have been thrown away.... i shall not be able to
+eq
+
+_______________________________________
+
+Enter Command: replace , with  
+Description: last punctuation
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z . , ;   # " ? ' ! : - 
+Sub :r l p d e o g k v b a y i u c n t w q h f j x s m z   : . , " ' ? ; ! - # 
+
+ciphertext:
+krje-rud-iraeq-uc"nwcgweqq -Xcfyd-mcf-leyveje-vh
+-V-krje-yvhewryym-uch-r-neuum-rud-dcu;h"aucx-kcx-hc-etfvn-Lcwvq '-Qke-hcca-cfh-kew-krudaewpkveo-rud-legru-hc"pwm -'V-ueed-ovje-kfudwed-wflyeq
+-rud-krje-cuym-cue-hxeuhm.ovje.wflye"uche -V-ri-vu-qfpk-r-qhrhe    -Im-cuym-kcne-ucx-vq-vu-Pcfuh-Pmwvy"Jyrdvivwcjvpk-Lebúakcj -Vo-ke-xvyy-uch-rqqvqh-kvq-gcdqcu.mcf-aucx"ke-vq-Lcwm;q-gcdorhkew.rud-ryycx-kvi-qciehkvug-ocw-kvq-irvuheurupe
+"ryy-im-hwcflye-xvyy-krje-leeu-hkwcxu-rxrm    -V-qkryy-uch-le-rlye-hc"et
+plaintext :
+have and makes no
+progress. would you believe it- i have literally not a penny and don't
+know how to equip boris." she took out her handkerchief and began to
+cry. "i need five hundred rubles- and have only one twenty;five;ruble
+note. i am in such a state.... my only hope now is in count cyril
+vladimirovich bej--khov. if he will not assist his godson;you know
+he is bory's godfather;and allow him something for his maintenance-
+all my trouble will have been thrown away.... i shall not be able to
+eq
+
+_______________________________________
+
+Enter Command: replace : with  
+Description: fixing
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z . , ;   # " ? ' ! : - 
+Sub :r l p d e o g k v b a y i u c n t w q h f j x s m z   : . : " ' ? ; ! - # 
+
+ciphertext:
+krje-rud-iraeq-uc"nwcgweqq -Xcfyd-mcf-leyveje-vh
+-V-krje-yvhewryym-uch-r-neuum-rud-dcu;h"aucx-kcx-hc-etfvn-Lcwvq '-Qke-hcca-cfh-kew-krudaewpkveo-rud-legru-hc"pwm -'V-ueed-ovje-kfudwed-wflyeq
+-rud-krje-cuym-cue-hxeuhm.ovje.wflye"uche -V-ri-vu-qfpk-r-qhrhe    -Im-cuym-kcne-ucx-vq-vu-Pcfuh-Pmwvy"Jyrdvivwcjvpk-Lebúakcj -Vo-ke-xvyy-uch-rqqvqh-kvq-gcdqcu.mcf-aucx"ke-vq-Lcwm;q-gcdorhkew.rud-ryycx-kvi-qciehkvug-ocw-kvq-irvuheurupe
+"ryy-im-hwcflye-xvyy-krje-leeu-hkwcxu-rxrm    -V-qkryy-uch-le-rlye-hc"et
+plaintext :
+have and makes no
+progress. would you believe it- i have literally not a penny and don't
+know how to equip boris." she took out her handkerchief and began to
+cry. "i need five hundred rubles- and have only one twenty;five;ruble
+note. i am in such a state.... my only hope now is in count cyril
+vladimirovich bej--khov. if he will not assist his godson;you know
+he is bory's godfather;and allow him something for his maintenance-
+all my trouble will have been thrown away.... i shall not be able to
+eq
+
+_______________________________________
+
+Enter Command: replace , with ,
+Description: fixing
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z . , ;   # " ? ' ! : - 
+Sub :r l p d e o g k v b a y i u c n t w q h f j x s m z   , . : " ' ? ; ! - # 
+
+ciphertext:
+krje-rud-iraeq-uc"nwcgweqq -Xcfyd-mcf-leyveje-vh
+-V-krje-yvhewryym-uch-r-neuum-rud-dcu;h"aucx-kcx-hc-etfvn-Lcwvq '-Qke-hcca-cfh-kew-krudaewpkveo-rud-legru-hc"pwm -'V-ueed-ovje-kfudwed-wflyeq
+-rud-krje-cuym-cue-hxeuhm.ovje.wflye"uche -V-ri-vu-qfpk-r-qhrhe    -Im-cuym-kcne-ucx-vq-vu-Pcfuh-Pmwvy"Jyrdvivwcjvpk-Lebúakcj -Vo-ke-xvyy-uch-rqqvqh-kvq-gcdqcu.mcf-aucx"ke-vq-Lcwm;q-gcdorhkew.rud-ryycx-kvi-qciehkvug-ocw-kvq-irvuheurupe
+"ryy-im-hwcflye-xvyy-krje-leeu-hkwcxu-rxrm    -V-qkryy-uch-le-rlye-hc"et
+plaintext :
+have and makes no
+progress. would you believe it- i have literally not a penny and don't
+know how to equip boris." she took out her handkerchief and began to
+cry. "i need five hundred rubles- and have only one twenty-five-ruble
+note. i am in such a state.... my only hope now is in count cyril
+vladimirovich bej--khov. if he will not assist his godson-you know
+he is bory's godfather;and allow him something for his maintenance-
+all my trouble will have been thrown away.... i shall not be able to
+eq
+
+_______________________________________
+
+Enter Command: end
+Description: finito
